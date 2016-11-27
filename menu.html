@@ -1,0 +1,137 @@
+
+<!doctype html>
+<html>
+<Head>
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#1e90ff">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#1e90ff">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e90ff">
+<!-- basicblue trademark is rgb(63,72,204); -->
+<!--<script src="//load.sumome.com/" data-sumo-site-id="5a7c79bb3d099660831dcdf197929478970d112f39d050070f7c14c50abc81f2" async="async"></script>-->
+ <title>kwike</title>
+<meta content="width=device-width,initial-
+scale=1"name=viewport>
+<meta content="Get YouTube gameplay and reviews as well as utility and essential apps and games for Android and online."name=description>
+<link rel="icon" href="https://raw.githubusercontent.com/kwike/images/master/c-icon.png">
+ <style>
+	
+ body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
+ @font-face {
+  font-family: 'po';
+  src: url('pot.ttf'); /* IE9 Compat Modes */
+  src: url('pot.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('pot.ttf') format('woff'), /* Pretty Modern Browsers */
+       url('pot.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+ nav,td a{color:#fff}
+ #menuc,#menuh,td a{text-decoration:none}
+#menu,#menub{position:fixed;float:right;right:0}
+#close,#menub{cursor:pointer}
+#menu table{float:right;right:4px;top:9px
+}
+td a{font-size:15px;padding:15px}
+nav{height:50px;text-align:right;top:0;position:fixed;display:flex;background:rgba(0,0,0,.5);width:100%;z-index:9999999}
+#menuc,#menuh{color:#000}
+#menuh{padding:10px;font-size:30px}
+#menuc{padding:10px;font-size:25px;color:#818181;display:block}
+#menu{width:0;background-color:#e9e9e9;height:100%;z-index:9999999999;top:0;overflow-x:hidden;padding-top:20px;transition:width 0.2s ;}
+#close{padding-left:10px;top:0}
+#menub{padding:13px}
+#heading{padding:20px;font-size:30px;cursor:default}
+#share{
+	background: dodgerblue;
+	left:0px;
+	position:fixed;
+	top:50px;
+	width:0px;
+	height:240px;
+	z-index: 99999999999999999999999999;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	transition:width 1s;
+	}
+#shareimg{
+	color:white;
+	text-align:center;
+	width:60px;
+	height:60px;
+	padding:30px;
+	background-color:dodgerblue;
+	transition:background-color 0.5s;
+	 }
+	 #shareimg:hover{
+		 background-color:blue;
+	 }
+#sharebtn,#closeshare{
+	position:fixed;
+	z-index:9999999999999999999999999999999999999999999;
+	height:50px;
+	width:50px;
+	border-radius:50%;
+	box-shadow:3px 3px 3px rgba(1,1,1,0.5);
+	transition:box-shadow 0.5s;
+	bottom:10px;
+	right:10px;
+	background-color:purple;
+	
+	 }
+	 #sharebtn:hover,#closeshare:hover{
+		 box-shadow:5px 5px 5px rgba(1,1,1,0.5);
+	 }
+	 #closeshare{display:none;}	 
+	 #crossb{padding:15px;color:white;}
+		 
+ </style>
+ </head>
+<body id="body" onload="loaded()">
+	<link href=/lib.css rel=stylesheet>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel=stylesheet>
+ <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One"rel=stylesheet>
+<nav >
+<strong id="heading"><a >Kwike</a></strong>
+<strong id="menub" onclick="openNav()"><i class="material-icons">&#xE5D2;</i></strong></nav>
+<div id="menu"><strong onclick="closeNav()">
+<i class="material-icons" id="close">&#xE5CD;</i>
+</strong>
+<table>
+<tr><th><a id="menuh" href="/">Kwike</a></th></tr><tr>
+<td><a id="menuc" href="/rkwike">RKwike</a></td></tr><tr>
+<td><a id="menuc" href="/gamerspoint">Gamerspoint</a></td></tr><tr>
+<td><a id="menuc" href="/appifier">Appifier</a></td></tr><tr>
+<td><a id="menuc" href="/trends">Trends</a></td></tr><tr>
+<td><a id="menuc" href="/about">About</a></td></tr>
+ <td id="cc"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">kwike</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="kwike.github.io" property="cc:attributionName" rel="cc:attributionURL">SAR</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="kwike.github.io" rel="dct:source">kwike.github.io</a>.</td>
+</table>
+
+</div>
+ <div id="share">
+	
+	 <b id="shareimg">Share</b>
+	 
+         <a id="shareimg" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkwike.github.io%2F"><img id="shareimg" src="https://raw.githubusercontent.com/kwike/images/master/facebook.png" alt="facebook"></a>
+	 <a id="shareimg" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkwike.github.io%2F&text=kwike"><img id="shareimg" src="https://raw.githubusercontent.com/kwike/images/master/twitter.png" alt="twitter"></a>
+	 <a id="shareimg" href="https://plus.google.com/share?url=https%3A%2F%2Fkwike.github.io%2F"><img id="shareimg" src="https://raw.githubusercontent.com/kwike/images/master/googlep.png" alt="google plus"></a>
+	 <a id="shareimg" href=" mailto:?Subject=Kwike&body=hey, i%20have%20liked%20the%20kwike%20series%20of%20videos%20and%20app%20on%20youtube%20their%20website.visit%20now%20on%20https%3a%2f%2fkwike.github.io"><img id="shareimg" src="https://raw.githubusercontent.com/kwike/images/master/email.png" alt="mail"></a>
+	 <a id="shareimg" href="https://sumome.com/apps/share/facebook-like?href=https%3A%2F%2Fkwike.github.io%2F"><img id="shareimg" src="https://raw.githubusercontent.com/kwike/images/master/fblike.png" alt="facebook like"></a>
+	 <a id="shareimg" href="whatsapp://send?text=kwike%20https%3a%2f%2fkwike.github.io%2f"><img id="shareimg" src="https://raw.githubusercontent.com/kwike/images/master/whatsapp.png" alt="whatsapp"></a>
+	  </div>
+<div id="sharebtn" onclick="shareopen()"><img src="https://raw.githubusercontent.com/kwike/images/master/share-2-icon.png" alt="share" height="50" width="50">
+	</div>
+	<span id="closeshare" onclick="shareclose()"><i class="material-icons" id="crossb">&#xE5CD;</i></span>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAXJ3fRI3ej5bA1Iq19O_K4diXjHMULQNk",
+    authDomain: "kwike-ef152.firebaseapp.com",
+    databaseURL: "https://kwike-ef152.firebaseio.com",
+    storageBucket: "kwike-ef152.appspot.com",
+    messagingSenderId: "675952927246"
+  };
+  firebase.initializeApp(config);
+</script>
+</body>
+</html>
